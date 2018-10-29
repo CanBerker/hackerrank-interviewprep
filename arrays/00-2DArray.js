@@ -34,10 +34,7 @@ function hourglassSum(arr) {
       
       for (var k = j - 1; k <= j + 1; k++) {
         currentSumTop += arr[i-1][k]; 
-      }
-
-      for (var k = j - 1; k <= j + 1; k++) {
-        currentSumBottom += arr[i+1][k]; 
+        currentSumBottom += arr[i+1][k];
       }
 
       maxSum = Math.max(maxSum, currentSumTop + currentSumMiddle + currentSumBottom);
